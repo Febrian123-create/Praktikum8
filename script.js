@@ -1,6 +1,6 @@
 function startQuiz() {
     let score = 0;
-    const operators = ["+", "-", "*","/"];
+    const operators = ["+", "-", "*"];
     let attempt=0;
     while (true) {
       const num1 = Math.floor(Math.random() * 20) + 1;
@@ -22,9 +22,6 @@ function startQuiz() {
       }
       else if(operator==="*"){
         correctAnswer=num1*num2
-      }
-      else{
-        correctAnswer=num1/num2
       }
       if (Math.abs(userAnswer === correctAnswer)) {
         alert("Correct!");
