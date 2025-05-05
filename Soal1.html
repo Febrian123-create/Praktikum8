@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin:auto;
+            text-align:center;
+        }
+        #border{
+            color:white;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3 align="center">Persegi Buatanmu</h3>
+        <div id="border" align="center" style="margin:auto">Isi</div>
+        <p>&copy;2472039-Febrian Timotius Sugiarto</p>
+    </div>
+    <script>
+        let border=prompt("Border persegi(misal 1):");
+        let tinggi=prompt("Tinggi persegi(px):");
+        let lebar=prompt("Lebar persegi(px):");
+        let warna=prompt("Warna persgei(misal,red,blue,#00ff00)");
+        let isi=prompt("isi persegi");
+
+        let ganti= document.getElementById("border");
+        ganti.style.border=border+'px';
+        ganti.style.height=tinggi+'px';
+        ganti.style.width=lebar+'px';
+        ganti.style.backgroundColor=warna;
+        ganti.innerHTML=isi;
+    </script>
+</body>
+</html>
